@@ -1,12 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import AuthProvider from 'react-oidc-context';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AuthProvider
+      authority="https://demo.identityserver.io"
+      client_id="interactive.public"
+    >
+      <App />
+    </AuthProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

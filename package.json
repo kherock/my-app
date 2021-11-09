@@ -6,8 +6,10 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "oidc-client-ts": "authts/oidc-client-ts#8a6f772198dcaab8f5fe9282a98b2fea3a19d5cd",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-oidc-context": "authts/react-oidc-context#d91b3ec4ed1522268f52c75ea9dd8b809a4a6dee",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
@@ -15,7 +17,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "test-imports": "node --experimental-import-meta-resolve test/node-imports.mjs"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +37,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "packageManager": "yarn@3.1.0"
 }
